@@ -30,8 +30,7 @@ const Sidebar = () => {
       dispatch(ToggleSidebarAction());
     }
 
-    console.log("E target", e.target);
-    console.log("Ref Current", SideWrap.current);
+  
   };
 
   return (
