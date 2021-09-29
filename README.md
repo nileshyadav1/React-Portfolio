@@ -11,4 +11,4 @@ Concepts used in the project:
 
 
 ## Live Demo
-The app is deployed using firebase hosting. [visit site](https://react-invoice-app-c9baa.web.app/)
+The app is deployed using firebase hosting. [visit site](https://nilesh-yadav-9986b.web.app/)
