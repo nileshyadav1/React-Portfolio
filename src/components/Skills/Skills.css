@@ -1,0 +1,202 @@
+
+
+.skills .skill-item {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+
+  max-width: 100%;
+  width:100%;
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+ 
+ 
+}
+
+.skills .skill-item .skill-item-inner {
+ 
+ 
+  border-radius: 10px;
+  padding: 30px 15px;
+ position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+  
+}
+.skills .skill-item .skill-item-inner .text-zone {
+ 
+  min-width:450px;
+  
+  position: relative;
+ 
+}
+
+
+
+
+
+
+
+
+.skills .skill-item .skill-item-inner p {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 25px;
+  
+  margin: 0;
+}
+
+
+
+
+
+.skills .skill-item-inner .text-heading {
+  transition: 0.2s ease-in-out color;
+  display: block;
+  font-size: 45px;
+  color:var(--Heading);
+}
+
+.skills .skill-item-inner .text-heading:hover {
+  display: inline-block;
+  cursor: pointer;
+  animation: rubberBand 1s ease-in-out forwards;
+  color: white;
+}
+@-webkit-keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.skills .skill-item .skill-item-inner .mid-tag-start {
+  position: absolute;
+  top: 12px;
+  left: -32px;
+}
+.skills .skill-item .skill-item-inner .mid-tag-end {
+  position: absolute;
+  top: 159px;
+  left: -32px;
+}
+
+
+/* .skills .skill-item .skill-item-inner .my-canvas{
+ background-color: red;
+} */
+/* Media Queries */
+@media (max-width: 1199px) {
+.skills .skill-item{
+  padding-left: 50px;
+}
+.skills .skill-item .skill-item-inner .my-canvas{
+  position: relative;
+  left: -10px;
+  
+}
+
+}
+@media (max-width: 991px) {
+  .skills .skill-item{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  
+  .skills .skill-item{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .skills .skill-item{
+    flex-direction: column;
+  }
+
+
+ 
+}
+
+@media (min-width:510px) and (max-width: 767px){
+  .skills .skill-item .skill-item-inner .mid-tag-end {
+    position: absolute;
+    top: 98px;
+    left: -32px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .skills .skill-item .skill-item-inner .my-canvas{
+    position: relative;
+    left: -90px;
+    top: -70px;
+  }
+}
+
+@media (max-width: 487px) {
+  
+  .skills .skill-item .skill-item-inner .my-canvas{
+    position: relative;
+    left: -65px;
+
+  }
+  .skills .skill-item{
+    padding-left: 0;
+  }
+
+  .skills .skill-item .skill-item-inner .text-zone {
+   
+    min-width:250px;
+    
+   
+   
+  }
+  
+
+}

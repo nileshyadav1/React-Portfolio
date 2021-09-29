@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {  useSelector } from "react-redux";
+import {     isLightMode } from "./store/ToggleLightModeSlice";
+
+import Skills from "./components/Skills/Skills";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
+import Sidebar from "./components/SideBar/Sidebar";
+import "./App.css";
 
 function App() {
+  const IsThemeLight = useSelector(isLightMode);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${IsThemeLight ? "light" : ""}`} >
+        <Router>
+      <Sidebar />
+      
+      <div className="app-content ">
+    
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/skills">
+              <Skills />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+          
+      </div>
+      </Router>
     </div>
   );
 }

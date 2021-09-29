@@ -1,0 +1,126 @@
+
+.contact .contact-info-item {
+    /* background-color: red; */
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact .contact-info-item .icon {
+    display: inline-block;
+  }
+  .contact .contact-info-item .icon .fa {
+    font-size: 40px;
+    color:var(--highlight);
+  }
+  .contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Heading);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+  }
+  .contact .contact-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text);
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .contact .alert{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content:center ;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: #79c879;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    
+    font-weight: 400;
+    display: block;
+  }
+  
+  .contact .contact-form {
+    /* background-color: black; */
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .contact .contact-form .col-6 {
+    /* background-color: red; */
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .contact .contact-form .col-12 {
+    /* background-color: red; */
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .contact .contact-form .form-item {
+    margin-bottom: 30px;
+  }
+  
+  .contact .contact-form .form-item .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid var(--Border);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: var( --bg-light);
+  }
+  .contact .contact-form .form-item .form-control:focus {
+    -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  }
+  .contact .contact-form .form-item textarea.form-control {
+    height: 140px;
+  }
+  .contact .contact-form .btn {
+    height: 50px;
+    color:#ffffff;
+    padding: 0 50px;
+    background-color:var(--highlight);
+  }
+  .contact .contact-form .btn:disabled {
+    height: 50px;
+    color:#ffffff;
+    padding: 0 50px;
+    background-color:var(--highlight);
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+  
+
+  @media (max-width: 737px) {
+    .contact .contact-info-item,
+    .contact .contact-form .col-6 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+   
+  
+  
+  }
+  @media (max-width: 370px) {
+   
+    .contact .contact-form .btn {
+      height: 40px;
+      padding: 0 30px;
+     
+    }
+  
+  
+  }
